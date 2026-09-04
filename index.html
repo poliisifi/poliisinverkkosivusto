@@ -1,1 +1,658 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Turva Finlande — Turvallisuus ja neuvonta</title>
+
+    <meta name="description"
+          content="Tietoa ja neuvontaa turvallisuuteen liittyvissä asioissa Suomessa.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <a href="#" class="logo">
+            <span class="logo-mark"> </span>
+
+            <span>
+                <strong>TURVA</strong>
+                <small>TURVALLISUUSNEUVONTA</small>
+            </span>
+        </a>
+
+        <nav class="navigation">
+
+            <a href="#services">Palvelut</a>
+            <a href="#infractions">Rikokset</a>
+            <a href="#securite">Turvallisuus</a>
+            <a href="#actualites">Ajankohtaista</a>
+            <a href="#contact">Yhteystiedot</a>
+
+        </nav>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="#services">Palvelut</a>
+    <a href="#infractions">Rikokset</a>
+    <a href="#securite">Turvallisuus</a>
+    <a href="#actualites">Ajankohtaista</a>
+    <a href="#contact">Yhteystiedot</a>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            TURVALLISUUSNEUVONTA
+        </div>
+
+        <h1>
+            Sinun turvallisuutesi,
+            <span>meidän tavoitteemme.</span>
+        </h1>
+
+        <p>
+            Löydä nopeasti tarvitsemasi turvallisuuteen liittyvät
+            tiedot, palvelut ja neuvot Suomessa.
+        </p>
+
+
+        <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Mitä etsit?"
+            >
+
+            <button onclick="rechercher()">
+                Hae
+            </button>
+
+        </div>
+
+
+        <div class="hero-links">
+
+            <a href="#services">Tutustu palveluihin →</a>
+
+            <a href="#contact">Ota yhteyttä →</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= URGENCE ================= -->
+
+<section class="emergency">
+
+    <div class="emergency-content">
+
+        <div class="emergency-icon">
+            
+        </div>
+
+        <div>
+
+            <h2>HÄTÄTILANTEESSA</h2>
+
+            <p>
+                Jos henkesi tai turvallisuutesi on välittömässä vaarassa,
+                soita hätänumeroon.
+            </p>
+
+        </div>
+
+        <a href="tel:112" class="emergency-button">
+            112
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" id="services">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            PALVELUT
+        </span>
+
+        <h2>
+            Tarvitsemasi palvelut
+        </h2>
+
+        <p>
+            Löydä nopeasti tärkeimmät turvallisuuteen liittyvät
+            tiedot ja toimintaohjeet.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <article class="card">
+
+            <div class="card-icon">
+                
+            </div>
+
+            <h3>
+                Asiakirjat ja asiointi
+            </h3>
+
+            <p>
+                Tietoa asiakirjoista, hakemuksista
+                ja erilaisista asiointimenettelyistä.
+            </p>
+
+            <a href="#">
+                Lue lisää →
+            </a>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">
+                
+            </div>
+
+            <h3>
+                Ilmoita rikoksesta
+            </h3>
+
+            <p>
+                Tutustu toimintaohjeisiin, jos olet joutunut
+                rikoksen tai muun epäillyn rikoksen kohteeksi.
+            </p>
+
+            <a href="#infractions">
+                Siirry palveluun →
+            </a>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">
+                
+            </div>
+
+            <h3>
+                Turvallisuusohjeet
+            </h3>
+
+            <p>
+                Käytännön neuvoja oman turvallisuutesi
+                parantamiseen arjessa ja verkossa.
+            </p>
+
+            <a href="#securite">
+                Katso ohjeet →
+            </a>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">
+                
+            </div>
+
+            <h3>
+                Etsi apua
+            </h3>
+
+            <p>
+                Löydä hyödyllisiä tietoja ja ohjeita
+                oikean palvelun löytämiseksi.
+            </p>
+
+            <a href="#contact">
+                Etsi apua →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INFRACTIONS ================= -->
+
+<section class="dark-section" id="infractions">
+
+    <div class="dark-content">
+
+        <div>
+
+            <span class="section-label light">
+                RIKOKSET
+            </span>
+
+            <h2>
+                Oletko joutunut
+                rikoksen uhriksi?
+            </h2>
+
+            <p>
+                Säilytä mahdolliset todisteet ja tutustu
+                tilanteeseesi sopiviin toimintaohjeisiin.
+            </p>
+
+            <a href="#" class="primary-button">
+                Katso toimintaohjeet
+            </a>
+
+        </div>
+
+
+        <div class="info-panel">
+
+            <div class="info-item">
+
+                <span>01</span>
+
+                <div>
+                    <strong>Säilytä todisteet</strong>
+
+                    <p>
+                        Säilytä viestit, kuvakaappaukset,
+                        asiakirjat ja muut asiaan liittyvät todisteet.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>02</span>
+
+                <div>
+                    <strong>Kirjaa tapahtumat</strong>
+
+                    <p>
+                        Merkitse muistiin tapahtumien päivämäärä,
+                        kellonaika, paikka ja olosuhteet.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span>03</span>
+
+                <div>
+                    <strong>Hae apua</strong>
+
+                    <p>
+                        Ota yhteyttä tilanteeseesi sopivaan
+                        viranomaiseen tai palveluun.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SECURITE ================= -->
+
+<section class="section" id="securite">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            ENNALTAEHKÄISY
+        </span>
+
+        <h2>
+            Huolehdi turvallisuudestasi joka päivä
+        </h2>
+
+    </div>
+
+
+    <div class="security-grid">
+
+        <article class="security-card">
+
+            <div class="security-number">
+                01
+            </div>
+
+            <h3>
+                Digitaalinen turvallisuus
+            </h3>
+
+            <p>
+                Opettele tunnistamaan huijaukset,
+                tietojenkalastelu ja muut verkkopetokset.
+            </p>
+
+            <a href="#">
+                Ohjeet →
+            </a>
+
+        </article>
+
+
+        <article class="security-card">
+
+            <div class="security-number">
+                02
+            </div>
+
+            <h3>
+                Petosten ehkäiseminen
+            </h3>
+
+            <p>
+                Tutustu hyviin toimintatapoihin tilanteissa,
+                joissa sinulta pyydetään rahaa tai tietoja epäilyttävästi.
+            </p>
+
+            <a href="#">
+                Lue lisää →
+            </a>
+
+        </article>
+
+
+        <article class="security-card">
+
+            <div class="security-number">
+                03
+            </div>
+
+            <h3>
+                Henkilökohtainen turvallisuus
+            </h3>
+
+            <p>
+                Yksinkertaisia suosituksia, joiden avulla voit
+                parantaa omaa turvallisuuttasi arjessa.
+            </p>
+
+            <a href="#">
+                Tutustu →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACTUALITES ================= -->
+
+<section class="news-section" id="actualites">
+
+    <div class="section-header">
+
+        <span class="section-label">
+            TIEDOTTEET
+        </span>
+
+        <h2>
+            Ajankohtaista ja hyödyllistä tietoa
+        </h2>
+
+    </div>
+
+
+    <div class="news-grid">
+
+        <article class="news-card">
+
+            <div class="news-date">
+                4. SYYSKUUTA 2026
+            </div>
+
+            <h3>
+                Näin suojaudut digitaalisilta huijauksilta
+            </h3>
+
+            <p>
+                Tutustu tärkeimpiin toimintatapoihin,
+                kun saat epäilyttävän viestin tai yhteydenoton.
+            </p>
+
+            <a href="#">
+                Lue artikkeli →
+            </a>
+
+        </article>
+
+
+        <article class="news-card">
+
+            <div class="news-date">
+                2. SYYSKUUTA 2026
+            </div>
+
+            <h3>
+                Henkilötietojen suojaaminen
+            </h3>
+
+            <p>
+                Muutamia käytännön suosituksia henkilötietojesi
+                parempaan suojaamiseen verkossa.
+            </p>
+
+            <a href="#">
+                Lue artikkeli →
+            </a>
+
+        </article>
+
+
+        <article class="news-card">
+
+            <div class="news-date">
+                28. ELOKUUTA 2026
+            </div>
+
+            <h3>
+                Toimi oikein vaikeassa tilanteessa
+            </h3>
+
+            <p>
+                Tärkeät toimintatavat, jotka on hyvä tuntea,
+                jos joudut huolestuttavaan tilanteeseen.
+            </p>
+
+            <a href="#">
+                Lue artikkeli →
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-box">
+
+        <div>
+
+            <span class="section-label">
+                TARVITSETKO APUA?
+            </span>
+
+            <h2>
+                Etkö tiedä,
+                kenen puoleen kääntyä?
+            </h2>
+
+            <p>
+                Tutustu tietoihimme tai ota yhteyttä oikeaan
+                palveluun tilanteesi mukaan.
+            </p>
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+            <a href="#" class="primary-button">
+                Tietoa
+            </a>
+
+            <a href="#" class="secondary-button">
+                Ota yhteyttä
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-top">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                TURVA
+            </div>
+
+            <p>
+                Riippumatonta turvallisuuteen liittyvää
+                tietoa ja neuvontaa.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Palvelut</h4>
+
+            <a href="#services">Palvelut</a>
+            <a href="#infractions">Rikokset</a>
+            <a href="#securite">Turvallisuus</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Tietoa</h4>
+
+            <a href="#actualites">Ajankohtaista</a>
+            <a href="#">Tietosuoja</a>
+            <a href="#">Lakisääteiset tiedot</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Yhteystiedot</h4>
+
+            <a href="#contact">Ota yhteyttä</a>
+            <a href="tel:112">Hätänumero: 112</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 TURVA — Riippumaton palvelu
+        </span>
+
+        <span>
+            Tämä sivusto ei ole Suomen poliisin virallinen verkkosivusto.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<!-- ================= CRISP CHAT ================= -->
+
+<script type="text/javascript">
+window.$crisp=[];
+window.CRISP_WEBSITE_ID="c8e54372-3eef-47f7-9a30-e0ea4cf8722c";
+(function(){
+    d=document;
+    s=d.createElement("script");
+    s.src="https://client.crisp.chat/l.js";
+    s.async=1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+})();
+</script>
+
+
+</body>
+</html>
