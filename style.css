@@ -1,1 +1,794 @@
+/* ==================================================
+   RESET
+================================================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background: #ffffff;
+    color: #17202a;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+.container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e7ebef;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-symbol {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: #0b2d4d;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-text strong {
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+.brand-text span {
+    margin-top: 5px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #66727e;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #35424f;
+    transition: 0.2s;
+}
+
+.main-nav a:hover {
+    color: #0b2d4d;
+}
+
+.menu-button {
+    display: none;
+    border: 0;
+    background: transparent;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   MOBILE MENU
+================================================== */
+
+.mobile-menu {
+    display: none;
+    background: white;
+    border-bottom: 1px solid #e5e9ed;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #edf0f2;
+    font-weight: 600;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    min-height: 610px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background:
+        linear-gradient(90deg, rgba(5, 28, 48, 0.94), rgba(5, 28, 48, 0.67)),
+        url("images/hero.jpg") center / cover no-repeat;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 90px 0;
+}
+
+.hero-badge {
+    display: inline-flex;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.08);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.04;
+    letter-spacing: -3px;
+}
+
+.hero h1 span {
+    display: block;
+    opacity: 0.78;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 25px 0 30px;
+    font-size: 18px;
+    color: rgba(255,255,255,0.82);
+}
+
+
+/* ==================================================
+   SEARCH
+================================================== */
+
+.search-box {
+    width: min(650px, 100%);
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+
+.search-icon {
+    color: #66727e;
+    font-size: 27px;
+    padding-left: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    height: 64px;
+    border: 0;
+    outline: 0;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.search-box button {
+    height: 64px;
+    border: 0;
+    padding: 0 28px;
+    background: #0b2d4d;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 0 21px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-primary {
+    background: #0b2d4d;
+    color: white;
+}
+
+.button-primary:hover {
+    transform: translateY(-2px);
+}
+
+.button-light {
+    background: white;
+    color: #17202a;
+}
+
+.button-outline {
+    background: transparent;
+    border-color: #cfd6dc;
+    color: #17202a;
+}
+
+
+/* ==================================================
+   EMERGENCY
+================================================== */
+
+.emergency {
+    background: #f3f6f8;
+    border-bottom: 1px solid #e1e6ea;
+}
+
+.emergency-inner {
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.emergency-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #b42318;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.emergency-text {
+    flex: 1;
+}
+
+.emergency-text span {
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.emergency-text p {
+    margin-top: 4px;
+    color: #56616c;
+}
+
+.emergency-number {
+    font-size: 34px;
+    font-weight: 800;
+    color: #b42318;
+}
+
+
+/* ==================================================
+   SECTIONS
+================================================== */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 45px;
+}
+
+.eyebrow {
+    color: #0b2d4d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin-top: 12px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+.section-heading p {
+    margin-top: 15px;
+    color: #66727e;
+}
+
+
+/* ==================================================
+   SERVICES
+================================================== */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.service-card {
+    min-height: 320px;
+    padding: 30px;
+    border: 1px solid #e4e9ed;
+    border-radius: 14px;
+    background: white;
+    transition: 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(15, 38, 58, 0.09);
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #edf3f7;
+    color: #0b2d4d;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #66727e;
+    font-size: 14px;
+}
+
+.service-card a,
+.security-card a,
+.news-card a {
+    display: inline-block;
+    margin-top: 22px;
+    color: #0b2d4d;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   DARK CRIME SECTION
+================================================== */
+
+.dark-section {
+    background: #0b2238;
+    color: white;
+    padding: 100px 0;
+}
+
+.crime-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.eyebrow-light {
+    color: #b8d2e5;
+}
+
+.crime-content h2 {
+    margin: 15px 0 20px;
+    font-size: clamp(34px, 4vw, 54px);
+    line-height: 1.1;
+}
+
+.crime-content p {
+    max-width: 560px;
+    color: #bdcad5;
+    margin-bottom: 30px;
+}
+
+.crime-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.crime-step {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.04);
+}
+
+.crime-step > span {
+    font-size: 13px;
+    font-weight: 800;
+    color: #9bb8cc;
+}
+
+.crime-step h3 {
+    font-size: 17px;
+}
+
+.crime-step p {
+    margin-top: 5px;
+    color: #aebdca;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   SECURITY
+================================================== */
+
+.security-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.security-card {
+    padding: 35px;
+    border-top: 3px solid #0b2d4d;
+    background: #f6f8fa;
+    border-radius: 12px;
+}
+
+.security-number {
+    font-size: 13px;
+    font-weight: 800;
+    color: #7b8791;
+}
+
+.security-card h3 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.security-card p {
+    margin-top: 12px;
+    color: #66727e;
+}
+
+
+/* ==================================================
+   NEWS
+================================================== */
+
+.news-section {
+    background: #f5f7f9;
+    padding: 100px 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.news-card {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    border: 1px solid #e4e9ed;
+}
+
+.news-date {
+    font-size: 11px;
+    font-weight: 800;
+    color: #7a8791;
+    letter-spacing: 1px;
+}
+
+.news-card h3 {
+    margin-top: 18px;
+    font-size: 21px;
+    line-height: 1.25;
+}
+
+.news-card p {
+    margin-top: 12px;
+    color: #66727e;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contact-section {
+    padding: 90px 0;
+}
+
+.contact-box {
+    padding: 55px;
+    border-radius: 16px;
+    background: #edf3f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-box h2 {
+    margin-top: 10px;
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.1;
+}
+
+.contact-box p {
+    margin-top: 12px;
+    color: #66727e;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    background: #081a2b;
+    color: white;
+    padding: 65px 0 25px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-logo {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.footer-brand p {
+    max-width: 280px;
+    margin-top: 12px;
+    color: #9aabb9;
+    font-size: 14px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-column a {
+    color: #9aabb9;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    color: #80919f;
+    font-size: 12px;
+}
+
+.disclaimer {
+    margin-top: 18px;
+    color: #718493;
+    font-size: 11px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .mobile-menu.active {
+        display: block;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .crime-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .security-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .header-inner {
+        min-height: 70px;
+    }
+
+    .brand-symbol {
+        width: 38px;
+        height: 38px;
+    }
+
+    .brand-text strong {
+        font-size: 19px;
+    }
+
+    .brand-text span {
+        font-size: 7px;
+    }
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .search-box {
+        min-height: 58px;
+    }
+
+    .search-box input {
+        height: 58px;
+    }
+
+    .search-box button {
+        height: 58px;
+        padding: 0 18px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .emergency-inner {
+        padding: 22px 0;
+        align-items: flex-start;
+    }
+
+    .emergency-number {
+        font-size: 27px;
+    }
+
+    .section,
+    .dark-section,
+    .news-section {
+        padding: 70px 0;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        padding: 30px;
+    }
+
+    .contact-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
